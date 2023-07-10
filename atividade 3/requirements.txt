@@ -1,0 +1,2 @@
+cryptography==39.0.2
+Pyro4==4.82

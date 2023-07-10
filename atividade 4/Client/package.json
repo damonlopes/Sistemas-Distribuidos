@@ -1,0 +1,17 @@
+{
+  "name": "atividade-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "eventsource": "^2.0.2",
+    "express": "^4.18.2"
+  }
+}

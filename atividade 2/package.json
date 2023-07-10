@@ -1,0 +1,50 @@
+{
+  "name": "css30-project-2",
+  "version": "1",
+  "description": "Project 2 for CSS30 - Sistemas DIstribuídos class on UTFPR",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services",
+    "start": "moleculer-runner services",
+    "cli": "npx moleculer connect",
+    "ci": "jest --watch",
+    "test": "jest --coverage",
+    "dc:build": "docker-compose -f docker-compose.yml up --build",
+    "dc:up": "docker-compose -f docker-compose.yml up -d",
+    "dc:down": "docker-compose down",
+    "dc:rm": "docker compose -f docker-compose.yml down -v --rmi all",
+    "dc:logs": "docker-compose logs -f",
+    "dc:exec": "echo ***CHANGE CONTAINER NAME*** \"docker exec -it {container_name} sh\" ***CHANGE CONTAINER NAME***"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "moleculer-repl": "^0.6.4",
+    "pino-pretty": "^5.0.2",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "moleculer": "^0.14.18",
+    "nats": "^1.4.12",
+    "pino-gelf": "^2.0.0",
+    "fastest-validator": "^1.10.0",
+    "mustache": "^4.2.0",
+    "fast-xml-parser": "^3.21.0",
+    "he": "^1.2.0"
+  },
+  "engines": {
+    "node": ">= 14.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node",
+    "roots": [
+      "./test"
+    ]
+  }
+}
